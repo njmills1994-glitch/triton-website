@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get a Quote | Triton Landscaping</title>
+<meta name="description" content="Request a free quote from Triton Landscaping on the Sunshine Coast. Call 0423 307 052 or send us photos of your job.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="images/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('cms-wait')</script>
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html" aria-label="Triton Landscaping – home">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span class="brand-text"><span class="b1">TRITON</span><span class="b2">LANDSCAPING</span></span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="testimonials.html">Testimonials</a><a href="faq.html">FAQ</a><a href="contact.html" aria-current=page>Contact</a></nav>
+    <a class="head-call" data-tel href="tel:0423307052"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>0423 307 052</span></a>
+    <a class="btn btn-gold head-quote" href="contact.html#quote">Get a Quote</a>
+    <button id="menu-btn" class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><svg class="i i-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="i i-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="menu-label">Menu</span></button>
+  </div>
+  <nav id="menu" class="menu" aria-label="Menu" hidden>
+    <div class="wrap">
+      <div class="menu-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="testimonials.html">Testimonials</a><a href="faq.html">FAQ</a><a href="contact.html" aria-current=page>Contact</a></div>
+      <a class="btn btn-gold btn-lg btn-block" data-tel href="tel:0423307052"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Call now</span></a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<section class="page-head"><div class="wrap narrow">
+  <p class="eyebrow" data-edit="contact.eyebrow">Contact</p>
+  <h1 data-edit="contact.title">Get a Quote</h1>
+  <p class="lead" data-edit="contact.intro" data-multiline>Tell us about your job and add a few photos. We’ll get back to you with a quote.</p>
+</div></section>
+<section class="section section-tight" id="quote">
+  <div class="wrap narrow">
+    <form id="quote-form" class="quote-form" name="quote" method="POST" action="contact.html?sent=1" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="company">
+      <input type="hidden" name="form-name" value="quote">
+      <input type="hidden" name="type_of_work" id="type-of-work">
+      <p class="hp" aria-hidden="true"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+      <div hidden><input type="file" name="photo1"><input type="file" name="photo2"><input type="file" name="photo3"><input type="file" name="photo4"><input type="file" name="photo5"></div>
+
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-phone">Phone</label>
+        <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" required>
+      </div>
+      <div class="field">
+        <label for="f-suburb">Suburb / location of the job</label>
+        <input id="f-suburb" name="suburb" type="text" autocomplete="address-level2" required>
+      </div>
+
+      <fieldset class="field">
+        <legend>Type of work <span class="opt">(tick all that apply)</span></legend>
+        <div class="checks"><label class="check"><input type="checkbox" value="Concrete slabs and driveways" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.1">Concrete slabs and driveways</span></label><label class="check"><input type="checkbox" value="Pool surrounds and coping" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.2">Pool surrounds and coping</span></label><label class="check"><input type="checkbox" value="Tiling" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.3">Tiling</span></label><label class="check"><input type="checkbox" value="Pavers and pathways" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.4">Pavers and pathways</span></label><label class="check"><input type="checkbox" value="Fencing" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.5">Fencing</span></label><label class="check"><input type="checkbox" value="Retaining walls" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.6">Retaining walls</span></label><label class="check"><input type="checkbox" value="Stone cladding" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.7">Stone cladding</span></label><label class="check"><input type="checkbox" value="Turf and garden landscaping" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.8">Turf and garden landscaping</span></label><label class="check"><input type="checkbox" value="Gravel and decorative stone areas" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-edit="service.9">Gravel and decorative stone areas</span></label>
+          <label class="check"><input type="checkbox" value="Other" id="work-other" data-work><span class="box" aria-hidden="true"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Other</span></label>
+        </div>
+        <div class="field other-field" id="other-field" hidden>
+          <label for="f-other">What other work?</label>
+          <input id="f-other" name="other_work" type="text">
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="f-desc">Description of the job</label>
+        <p class="hint" id="desc-hint">What would you like done? Rough size of the area, materials you like, and any timing.</p>
+        <textarea id="f-desc" name="description" rows="6" aria-describedby="desc-hint" required></textarea>
+      </div>
+
+      <div class="field">
+        <span class="label">Photos of the area <span class="opt">(optional)</span></span>
+        <p class="hint">Add up to 5 photos from your camera roll.</p>
+        <label class="btn btn-outline btn-block upload-btn" for="photo-picker"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>Add photos</span></label>
+        <input id="photo-picker" class="visually-hidden" type="file" accept="image/*" multiple>
+        <ul class="previews" id="previews"></ul>
+      </div>
+
+      <p class="form-error" id="form-error" role="alert" hidden></p>
+      <button class="btn btn-gold btn-lg btn-block" type="submit" id="submit-btn"><span data-edit="contact.submit">Request my quote</span></button>
+    </form>
+
+    <div id="thanks" class="thanks" tabindex="-1" hidden>
+      <p class="edit-note">Shown after a customer sends the form:</p>
+      <span class="thanks-icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <h2 data-edit="contact.thanksTitle">Thanks – your quote request has been sent!</h2>
+      <p class="ph" data-edit="contact.thanksText" data-multiline>We’ll be in touch within 1–2 business days. If it’s urgent, give us a call.</p>
+      <a class="btn btn-outline" data-tel href="tel:0423307052"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Call now</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-grey">
+  <div class="wrap narrow">
+    <h2 data-edit="contact.talkTitle">Prefer to talk?</h2>
+    <p class="big-phone"><a class="" data-tel href="tel:0423307052"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span data-edit="phone">0423 307 052</span></a></p>
+    <p data-edit="contact.followText">See more of our work and follow us:</p>
+    <div class="socials"><a class="social ph" data-link="facebook" href="#" aria-label="Facebook"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v8h4v-8H17l.5-4h-4V9c0-.6.4-1 1-1z"/></svg><span>Facebook</span></a><a class="social ph" data-link="instagram" href="#" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    <h2 data-edit="contact.mapTitle">Where we work</h2>
+    <p class="ph" data-edit="contact.mapText" data-multiline>We cover the Sunshine Coast, from Caloundra to Noosa and out to the hinterland.</p>
+    <div class="map">
+      <iframe title="Map of the Sunshine Coast service area" src="https://maps.google.com/maps?q=Sunshine%20Coast%20QLD&amp;z=10&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="images/logo.svg" alt="" width="56" height="56">
+      <div>
+        <p class="foot-name">TRITON LANDSCAPING</p>
+        <p class="foot-tag" data-edit="footer.tagline">Built to Last</p>
+      </div>
+    </div>
+    <p class="foot-area" data-edit="footer.area">Sunshine Coast, Queensland</p>
+    <p class="foot-phone"><a class="" data-tel href="tel:0423307052"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span data-edit="phone">0423 307 052</span></a></p>
+    <div class="socials"><a class="social ph" data-link="facebook" href="#" aria-label="Facebook"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v8h4v-8H17l.5-4h-4V9c0-.6.4-1 1-1z"/></svg><span>Facebook</span></a><a class="social ph" data-link="instagram" href="#" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a></div>
+    <nav class="foot-nav" aria-label="Footer"><a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="testimonials.html">Testimonials</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+    <p class="foot-copy">© <span class="year">2026</span> Triton Landscaping</p>
+  </div>
+</footer>
+
+<div class="action-bar">
+  <a class="btn btn-outline-gold" data-tel href="tel:0423307052"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>Call now</span></a>
+  <a class="btn btn-gold" href="contact.html#quote">Get a Quote</a>
+</div>
+
+<script src="js/site.js"></script>
+</body>
+</html>
