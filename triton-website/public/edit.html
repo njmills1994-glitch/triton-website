@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Owner login | Triton Landscaping</title>
+<link rel="icon" href="images/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+<main class="login">
+  <img src="images/logo.svg" alt="" width="72" height="72">
+  <h1>Edit your website</h1>
+  <p id="login-state">Enter your password to start editing.</p>
+  <form id="login-form">
+    <div class="field">
+      <label for="pw">Password</label>
+      <input id="pw" type="password" autocomplete="current-password" required>
+    </div>
+    <p class="form-error" id="login-error" role="alert" hidden></p>
+    <button class="btn btn-gold btn-lg btn-block" type="submit">Start editing</button>
+  </form>
+  <p><a href="index.html">Back to the website</a></p>
+</main>
+<script>
+(function(){
+  var form=document.getElementById('login-form'), err=document.getElementById('login-error');
+  form.addEventListener('submit', function(e){
+    e.preventDefault(); err.hidden=true;
+    var btn=form.querySelector('button'); btn.disabled=true; btn.textContent='Checking…';
+    fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:document.getElementById('pw').value})})
+      .then(function(r){ return r.json().catch(function(){return {};}).then(function(d){ return {ok:r.ok, d:d}; }); })
+      .then(function(res){
+        if(!res.ok || !res.d.token) throw new Error(res.d.error || 'That password didn’t work. Please try again.');
+        try{ localStorage.setItem('tritonToken', res.d.token); }catch(e){}
+        location.href='index.html';
+      })
+      .catch(function(e){ err.textContent = e.message.indexOf('fetch')>-1 ? 'Can’t reach the website right now. Check your internet connection and try again.' : e.message; err.hidden=false; btn.disabled=false; btn.textContent='Start editing'; });
+  });
+})();
+</script>
+</body>
+</html>
